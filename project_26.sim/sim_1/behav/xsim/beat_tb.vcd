@@ -1,0 +1,927 @@
+$date
+   Sat Aug  2 18:50:15 2025
+$end
+$version
+  2020.2
+$end
+$timescale
+  1ps
+$end
+$scope module beat_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # ext_int $end
+$var reg 1 $ int_int $end
+$var wire 8 % bpm [7:0] $end
+$var wire 8 & hrv [7:0] $end
+$var wire 8 ' avg [7:0] $end
+$var wire 8 ( irr [7:0] $end
+$var wire 1 ) done $end
+$var wire 5 * state_out [4:0] $end
+$var wire 1 + fsm_busy_out $end
+$var wire 1 , interrupt_pending_out $end
+$var wire 2 - irq_vector_out [1:0] $end
+$scope module uut $end
+$var wire 1 . clk $end
+$var wire 1 / rst $end
+$var wire 1 0 ext_int $end
+$var wire 1 1 int_int $end
+$var wire 5 * state_out [4:0] $end
+$var wire 1 + fsm_busy_out $end
+$var wire 1 , interrupt_pending_out $end
+$var wire 2 - irq_vector_out [1:0] $end
+$var reg 8 2 bpm [7:0] $end
+$var reg 8 3 hrv [7:0] $end
+$var reg 8 4 avg [7:0] $end
+$var reg 8 5 irr [7:0] $end
+$var reg 1 6 done $end
+$var reg 5 7 state [4:0] $end
+$var reg 5 8 saved_state [4:0] $end
+$var reg 6 9 addr [5:0] $end
+$var reg 6 : index [5:0] $end
+$var reg 8 ; a [7:0] $end
+$var reg 8 < b [7:0] $end
+$var reg 2 = opcode [1:0] $end
+$var reg 8 > alu_a [7:0] $end
+$var reg 8 ? alu_b [7:0] $end
+$var reg 1 @ we $end
+$var reg 1 A fsm_busy $end
+$var reg 1 B interrupt_pending $end
+$var reg 2 C active_irq_vector [1:0] $end
+$var reg 1 D interrupt_pending_ext $end
+$var reg 1 E interrupt_pending_int $end
+$var wire 8 F ram_dout [7:0] $end
+$var wire 8 G alu_result [7:0] $end
+$var wire 1 H alu_flag $end
+$var wire 2 I irq_vector [1:0] $end
+$var wire 1 J irq_valid $end
+$scope module mem_inst $end
+$var wire 1 . clk $end
+$var wire 1 K we $end
+$var wire 1 / rst $end
+$var wire 6 L addr [5:0] $end
+$var wire 8 M din [7:0] $end
+$var reg 8 N dout [7:0] $end
+$upscope $end
+$scope module alu_inst $end
+$var wire 1 . clk $end
+$var wire 1 / rst $end
+$var wire 8 O a [7:0] $end
+$var wire 8 P b [7:0] $end
+$var wire 2 Q opcode [1:0] $end
+$var reg 8 R result [7:0] $end
+$var reg 1 S flag $end
+$var reg 8 T a_reg [7:0] $end
+$var reg 8 U b_reg [7:0] $end
+$var reg 2 V opcode_reg [1:0] $end
+$var reg 8 W alu_result_stage2 [7:0] $end
+$var reg 1 X flag_stage2 $end
+$var reg 8 Y diff [7:0] $end
+$var reg 8 Z temp [7:0] $end
+$var parameter 2 [ OP_BPM [1:0] $end
+$var parameter 2 \ OP_HRV [1:0] $end
+$var parameter 2 ] OP_AVG [1:0] $end
+$var parameter 2 ^ OP_IRR [1:0] $end
+$upscope $end
+$scope module irq_ctrl $end
+$var wire 1 0 ext_int $end
+$var wire 1 1 int_int $end
+$var reg 2 _ irq_vector [1:0] $end
+$var reg 1 ` irq_valid $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+b0 %
+b0 &
+b0 '
+b0 (
+0)
+b0 *
+0+
+0,
+b0 -
+0.
+1/
+00
+01
+b0 2
+b0 3
+b0 4
+b0 5
+06
+b0 7
+bx 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+0@
+0A
+0B
+bx C
+0D
+0E
+bx F
+b0 G
+0H
+b0 I
+0J
+0K
+b0 L
+b0 M
+bx N
+b0 O
+b0 P
+b0 Q
+b0 R
+0S
+b0 T
+b0 U
+b0 V
+b0 W
+0X
+bx Y
+bx Z
+b0 [
+b1 \
+b10 ]
+b11 ^
+b0 _
+0`
+$end
+#5000
+1!
+1.
+b0 F
+b0 N
+#10000
+0!
+0.
+#15000
+1!
+1.
+#20000
+0!
+0"
+0.
+0/
+#25000
+1!
+b1 *
+1.
+b1 7
+b1010101 F
+b1010101 N
+1X
+#30000
+0!
+0.
+#35000
+1!
+b10 *
+1.
+b10 7
+1H
+1S
+#40000
+0!
+0.
+#45000
+1!
+b11 *
+1.
+b11 7
+b1 9
+b1010101 ;
+b1 L
+#50000
+0!
+0.
+#55000
+1!
+b100 *
+1.
+b100 7
+b1010110 F
+b1010110 N
+#60000
+0!
+0.
+#65000
+1!
+b101 *
+1.
+b101 7
+b1010110 <
+#70000
+0!
+0.
+#75000
+1!
+b110 *
+1+
+1.
+b110 7
+b1010101 >
+b1010110 ?
+1A
+b1010101 O
+b1010110 P
+#80000
+0!
+0.
+#85000
+1!
+b111 *
+1.
+b111 7
+b1010101 T
+b1010110 U
+#90000
+0!
+0.
+#95000
+1!
+b1000 *
+1.
+b1000 7
+b1000110 W
+0X
+#100000
+0!
+0.
+#105000
+1!
+b1001 *
+1.
+b1001 7
+b1 =
+b1000110 G
+0H
+b1 Q
+b1000110 R
+0S
+#110000
+0!
+0.
+#115000
+1!
+b1010 *
+1.
+b1010 7
+b1 V
+#120000
+0!
+0.
+#125000
+1!
+b1000110 %
+b1011 *
+1.
+b1000110 2
+b1011 7
+b1 W
+1X
+b1 Z
+#130000
+0!
+0.
+#135000
+1!
+b1100 *
+1.
+b1100 7
+b10 =
+b1 G
+1H
+b10 Q
+b1 R
+1S
+#140000
+0!
+0.
+#145000
+1!
+b1101 *
+1.
+b1101 7
+b10 V
+#150000
+0!
+0.
+#155000
+1!
+b1 &
+b1110 *
+1.
+b1 3
+b1110 7
+b1010101 W
+0X
+#160000
+0!
+0.
+#165000
+1!
+b1111 *
+1.
+b1111 7
+b11 =
+b1010101 G
+0H
+b11 Q
+b1010101 R
+0S
+#170000
+0!
+0.
+#175000
+1!
+b10000 *
+1.
+b10000 7
+b11 V
+#180000
+0!
+0.
+#185000
+1!
+b1010101 '
+b10001 *
+1.
+b1010101 4
+b10001 7
+b1 W
+b1 Y
+#190000
+0!
+0.
+#195000
+1!
+b0 *
+1.
+b0 7
+b10 :
+b1 G
+b1 R
+#200000
+0!
+0.
+#205000
+1!
+b1 (
+b1 *
+0+
+1.
+b1 5
+b1 7
+b10 9
+0A
+b10 L
+#210000
+0!
+0.
+#215000
+1!
+b10 *
+1.
+b10 7
+b1011110 F
+b1011110 N
+#220000
+0!
+0.
+#225000
+1!
+b11 *
+1.
+b11 7
+b11 9
+b1011110 ;
+b11 L
+#230000
+0!
+0.
+#235000
+1!
+b100 *
+1.
+b100 7
+b1001110 F
+b1001110 N
+#240000
+0!
+0.
+#245000
+1!
+b101 *
+1.
+b101 7
+b1001110 <
+#250000
+0!
+0.
+#255000
+1!
+b110 *
+1+
+1.
+b110 7
+b0 =
+b1011110 >
+b1001110 ?
+1A
+b1011110 O
+b1001110 P
+b0 Q
+#260000
+0!
+0.
+#265000
+1!
+b111 *
+1.
+b111 7
+b1011110 T
+b1001110 U
+b0 V
+#270000
+0!
+0.
+#275000
+1!
+b1000 *
+1.
+b1000 7
+b111111 W
+#280000
+0!
+0.
+#285000
+1!
+b1001 *
+1.
+b1001 7
+b1 =
+b111111 G
+b1 Q
+b111111 R
+#290000
+0!
+0.
+#295000
+1!
+b1010 *
+1.
+b1010 7
+b1 V
+#300000
+0!
+0.
+#305000
+1!
+b111111 %
+b1011 *
+1.
+b111111 2
+b1011 7
+b10000 W
+b10000 Z
+#310000
+0!
+0.
+#315000
+1!
+b1100 *
+1.
+b1100 7
+b10 =
+b10000 G
+b10 Q
+b10000 R
+#320000
+0!
+0.
+#325000
+1!
+b1101 *
+1.
+b1101 7
+b10 V
+#330000
+0!
+0.
+#335000
+1!
+b10000 &
+b1110 *
+1.
+b10000 3
+b1110 7
+b1010110 W
+#340000
+0!
+0.
+#345000
+1!
+b1111 *
+1.
+b1111 7
+b11 =
+b1010110 G
+b11 Q
+b1010110 R
+#350000
+0!
+0.
+#355000
+1!
+b10000 *
+1.
+b10000 7
+b11 V
+#360000
+0!
+0.
+#365000
+1!
+b1010110 '
+b10001 *
+1.
+b1010110 4
+b10001 7
+b10000 W
+1X
+b10000 Y
+#370000
+0!
+0.
+#375000
+1!
+b0 *
+1.
+b0 7
+b100 :
+b10000 G
+1H
+b10000 R
+1S
+#380000
+0!
+0.
+#385000
+1!
+b10000 (
+b1 *
+0+
+1.
+b10000 5
+b1 7
+b100 9
+0A
+b100 L
+#390000
+0!
+0.
+#395000
+1!
+b10 *
+1.
+b10 7
+bx F
+bx N
+#400000
+0!
+1#
+b1 -
+0.
+10
+b1 I
+1J
+b1 _
+1`
+#405000
+1!
+b11 *
+1.
+b11 7
+b101 9
+bx ;
+1D
+b101 L
+#410000
+0!
+0#
+1$
+b10 -
+0.
+00
+11
+b10 I
+1J
+b10 _
+1`
+#415000
+1!
+b11110 *
+1,
+1.
+b11110 7
+b11 8
+1B
+b1 C
+1E
+#420000
+0!
+0$
+b0 -
+0.
+01
+b0 I
+0J
+b0 _
+0`
+#425000
+1!
+b0 %
+b11 *
+0,
+1.
+b0 2
+b11 7
+0B
+0D
+#430000
+0!
+0.
+#435000
+1!
+b11111 *
+1,
+1.
+b11111 7
+1B
+b10 C
+#440000
+0!
+0.
+#445000
+1!
+b10001 &
+b11 *
+0,
+1.
+b10001 3
+b11 7
+0B
+0E
+#450000
+0!
+0.
+#455000
+1!
+b100 *
+1.
+b100 7
+#460000
+0!
+0.
+#465000
+1!
+b101 *
+1.
+b101 7
+bx <
+#470000
+0!
+0.
+#475000
+1!
+b110 *
+1+
+1.
+b110 7
+b0 =
+bx >
+bx ?
+1A
+bx O
+bx P
+b0 Q
+#480000
+0!
+0.
+#485000
+1!
+b111 *
+1.
+b111 7
+bx T
+bx U
+b0 V
+#490000
+0!
+0.
+#495000
+1!
+b1000 *
+1.
+b1000 7
+b0 W
+#500000
+0!
+0.
+#505000
+1!
+b1001 *
+1.
+b1001 7
+b1 =
+b0 G
+b1 Q
+b0 R
+#510000
+0!
+0.
+#515000
+1!
+b1010 *
+1.
+b1010 7
+b1 V
+#520000
+0!
+0.
+#525000
+1!
+b1011 *
+1.
+b1011 7
+bx W
+xX
+bx Z
+#530000
+0!
+0.
+#535000
+1!
+b1100 *
+1.
+b1100 7
+b10 =
+bx G
+xH
+b10 Q
+bx R
+xS
+#540000
+0!
+0.
+#545000
+1!
+b1101 *
+1.
+b1101 7
+b10 V
+#550000
+0!
+0.
+#555000
+1!
+bx &
+b1110 *
+1.
+bx 3
+b1110 7
+b0xxxxxxx W
+0X
+#560000
+0!
+0.
+#565000
+1!
+b1111 *
+1.
+b1111 7
+b11 =
+b0xxxxxxx G
+0H
+b11 Q
+b0xxxxxxx R
+0S
+#570000
+0!
+0.
+#575000
+1!
+b10000 *
+1.
+b10000 7
+b11 V
+#580000
+0!
+0.
+#585000
+1!
+b0xxxxxxx '
+b10001 *
+1.
+b0xxxxxxx 4
+b10001 7
+bx W
+xX
+bx Y
+#590000
+0!
+0.
+#595000
+1!
+1)
+1.
+16
+bx G
+xH
+bx R
+xS
+#600000
+0!
+0.
+#605000
+1!
+1.
+#610000
+0!
+0.
+#615000
+1!
+1.
+#620000
+0!
+0.
+#625000
+1!
+1.
+#630000
+0!
+0.
+#635000
+1!
+1.
+#640000
+0!
+0.
+#645000
+1!
+1.
+#650000
+0!
+0.
+#655000
+1!
+1.
+#660000
+0!
+0.
+#665000
+1!
+1.
+#670000
+0!
+0.
+#675000
+1!
+1.
+#680000
+0!
+0.
+#685000
+1!
+1.
+#690000
+0!
+0.
+#695000
+1!
+1.
+#700000
+0!
+0.
+#705000
+1!
+1.
+#710000
+0!
+0.
+#715000
+1!
+1.

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="beat_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="beat_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="720001fs"></ZoomEndTime>
+      <Cursor1Time time="241980fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/beat_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/state_out" type="array">
+      <obj_property name="ElementShortName">state_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_out[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/bpm" type="array">
+      <obj_property name="ElementShortName">bpm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bpm[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/hrv" type="array">
+      <obj_property name="ElementShortName">hrv[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hrv[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/avg" type="array">
+      <obj_property name="ElementShortName">avg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">avg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/irr" type="array">
+      <obj_property name="ElementShortName">irr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">irr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/fsm_busy_out" type="logic">
+      <obj_property name="ElementShortName">fsm_busy_out</obj_property>
+      <obj_property name="ObjectShortName">fsm_busy_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/interrupt_pending_out" type="logic">
+      <obj_property name="ElementShortName">interrupt_pending_out</obj_property>
+      <obj_property name="ObjectShortName">interrupt_pending_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/ext_int" type="logic">
+      <obj_property name="ElementShortName">ext_int</obj_property>
+      <obj_property name="ObjectShortName">ext_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/beat_tb/int_int" type="logic">
+      <obj_property name="ElementShortName">int_int</obj_property>
+      <obj_property name="ObjectShortName">int_int</obj_property>
+   </wvobject>
+</wave_config>

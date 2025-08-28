@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Vivado/project_26/project_26.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Vivado/project_26/project_26.srcs/sim_1/new/tb_beat.v,1751453890,verilog,,,,beat_tb,,,,,,,,
+C:/Vivado/project_26/project_26.srcs/sources_1/new/beat.v,1751453862,verilog,,C:/Vivado/project_26/project_26.srcs/sim_1/new/tb_beat.v,,beat;interrupt_controller;pipelined_alu;ram,,,,,,,,

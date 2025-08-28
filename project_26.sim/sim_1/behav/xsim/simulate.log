@@ -1,0 +1,10 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Starting simulation...
+>>> External interrupt triggered at               400000
+>>> Internal interrupt triggered at               410000
+Final BPM =   0
+Final HRV =   x
+Final AVG =   X
+Final IRR =  16
+$finish called at time : 720 ns : File "C:/Vivado/project_26/project_26.srcs/sim_1/new/tb_beat.v" Line 69

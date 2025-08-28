@@ -1,0 +1,623 @@
+$date
+   Wed Jul  2 16:07:15 2025
+$end
+$version
+  2020.2
+$end
+$timescale
+  1ps
+$end
+$scope module tb_beat $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # ext_int $end
+$var reg 1 $ int_int $end
+$var wire 8 % bpm [7:0] $end
+$var wire 8 & hrv [7:0] $end
+$var wire 8 ' avg [7:0] $end
+$var wire 8 ( irr [7:0] $end
+$var wire 1 ) done $end
+$var wire 5 * state_out [4:0] $end
+$var wire 1 + fsm_busy_out $end
+$var wire 1 , interrupt_pending_out $end
+$var wire 2 - irq_vector_out [1:0] $end
+$scope module uut $end
+$var wire 1 . clk $end
+$var wire 1 / rst $end
+$var wire 1 0 ext_int $end
+$var wire 1 1 int_int $end
+$var wire 5 * state_out [4:0] $end
+$var wire 1 + fsm_busy_out $end
+$var wire 1 , interrupt_pending_out $end
+$var wire 2 - irq_vector_out [1:0] $end
+$var reg 8 2 bpm [7:0] $end
+$var reg 8 3 hrv [7:0] $end
+$var reg 8 4 avg [7:0] $end
+$var reg 8 5 irr [7:0] $end
+$var reg 1 6 done $end
+$var reg 5 7 state [4:0] $end
+$var reg 5 8 saved_state [4:0] $end
+$var reg 6 9 addr [5:0] $end
+$var reg 6 : index [5:0] $end
+$var reg 8 ; a [7:0] $end
+$var reg 8 < b [7:0] $end
+$var reg 2 = opcode [1:0] $end
+$var reg 8 > alu_a [7:0] $end
+$var reg 8 ? alu_b [7:0] $end
+$var reg 1 @ we $end
+$var reg 1 A fsm_busy $end
+$var reg 1 B interrupt_pending $end
+$var reg 2 C active_irq_vector [1:0] $end
+$var reg 1 D latched_ext_int $end
+$var reg 1 E latched_int_int $end
+$var wire 8 F ram_dout [7:0] $end
+$var wire 8 G alu_result [7:0] $end
+$var wire 1 H alu_flag $end
+$scope module mem_inst $end
+$var wire 1 . clk $end
+$var wire 1 I we $end
+$var wire 1 / rst $end
+$var wire 6 J addr [5:0] $end
+$var wire 8 K din [7:0] $end
+$var reg 8 L dout [7:0] $end
+$upscope $end
+$scope module alu_inst $end
+$var wire 1 . clk $end
+$var wire 1 / rst $end
+$var wire 8 M a [7:0] $end
+$var wire 8 N b [7:0] $end
+$var wire 2 O opcode [1:0] $end
+$var reg 8 P result [7:0] $end
+$var reg 1 Q flag $end
+$var reg 8 R a_reg [7:0] $end
+$var reg 8 S b_reg [7:0] $end
+$var reg 2 T opcode_reg [1:0] $end
+$var reg 8 U alu_result_stage2 [7:0] $end
+$var reg 1 V flag_stage2 $end
+$var reg 8 W diff [7:0] $end
+$var reg 8 X temp [7:0] $end
+$var parameter 2 Y OP_BPM [1:0] $end
+$var parameter 2 Z OP_HRV [1:0] $end
+$var parameter 2 [ OP_AVG [1:0] $end
+$var parameter 2 \ OP_IRR [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+b0 %
+b0 &
+b0 '
+b0 (
+0)
+b0 *
+0+
+0,
+b0 -
+0.
+1/
+00
+01
+b0 2
+b0 3
+b0 4
+b0 5
+06
+b0 7
+bx 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+0@
+0A
+0B
+bx C
+0D
+0E
+bx F
+b0 G
+0H
+0I
+b0 J
+b0 K
+bx L
+b0 M
+b0 N
+b0 O
+b0 P
+0Q
+b0 R
+b0 S
+b0 T
+b0 U
+0V
+bx W
+bx X
+b0 Y
+b1 Z
+b10 [
+b11 \
+$end
+#5000
+1!
+1.
+b0 F
+b0 L
+#10000
+0!
+0.
+#15000
+1!
+1.
+#20000
+0!
+0"
+0.
+0/
+#25000
+1!
+1.
+b1010101 F
+b1010101 L
+1V
+#30000
+0!
+0.
+#35000
+1!
+1.
+1H
+1Q
+#40000
+0!
+0.
+#45000
+1!
+1.
+#50000
+0!
+0.
+#55000
+1!
+1.
+#60000
+0!
+0.
+#65000
+1!
+1.
+#70000
+0!
+0.
+#75000
+1!
+1.
+#80000
+0!
+0.
+#85000
+1!
+1.
+#90000
+0!
+0.
+#95000
+1!
+1.
+#100000
+0!
+0.
+#105000
+1!
+1.
+#110000
+0!
+0.
+#115000
+1!
+1.
+#120000
+0!
+0.
+#125000
+1!
+1.
+#130000
+0!
+0.
+#135000
+1!
+1.
+#140000
+0!
+0.
+#145000
+1!
+1.
+#150000
+0!
+0.
+#155000
+1!
+1.
+#160000
+0!
+0.
+#165000
+1!
+1.
+#170000
+0!
+0.
+#175000
+1!
+1.
+#180000
+0!
+0.
+#185000
+1!
+1.
+#190000
+0!
+0.
+#195000
+1!
+1.
+#200000
+0!
+0.
+#205000
+1!
+1.
+#210000
+0!
+0.
+#215000
+1!
+1.
+#220000
+0!
+0.
+#225000
+1!
+1.
+#230000
+0!
+0.
+#235000
+1!
+1.
+#240000
+0!
+0.
+#245000
+1!
+1.
+#250000
+0!
+0.
+#255000
+1!
+1.
+#260000
+0!
+0.
+#265000
+1!
+1.
+#270000
+0!
+0.
+#275000
+1!
+1.
+#280000
+0!
+0.
+#285000
+1!
+1.
+#290000
+0!
+0.
+#295000
+1!
+1.
+#300000
+0!
+0.
+#305000
+1!
+1.
+#310000
+0!
+0.
+#315000
+1!
+1.
+#320000
+0!
+0.
+#325000
+1!
+1.
+#330000
+0!
+0.
+#335000
+1!
+1.
+#340000
+0!
+0.
+#345000
+1!
+1.
+#350000
+0!
+0.
+#355000
+1!
+1.
+#360000
+0!
+0.
+#365000
+1!
+1.
+#370000
+0!
+0.
+#375000
+1!
+1.
+#380000
+0!
+0.
+#385000
+1!
+1.
+#390000
+0!
+0.
+#395000
+1!
+1.
+#400000
+0!
+1#
+0.
+10
+#405000
+1!
+b1 -
+1.
+1D
+#410000
+0!
+0#
+1$
+0.
+00
+11
+#415000
+1!
+b11110 *
+1,
+1.
+b11110 7
+b0 8
+1B
+b1 C
+1E
+#420000
+0!
+0$
+0.
+01
+#425000
+1!
+b0 *
+0,
+b10 -
+1.
+b0 7
+0B
+0D
+#430000
+0!
+0.
+#435000
+1!
+b11111 *
+1,
+1.
+b11111 7
+1B
+b10 C
+#440000
+0!
+0.
+#445000
+1!
+b1 &
+b0 *
+0,
+b0 -
+1.
+b1 3
+b0 7
+0B
+0E
+#450000
+0!
+0.
+#455000
+1!
+1.
+#460000
+0!
+0.
+#465000
+1!
+1.
+#470000
+0!
+0.
+#475000
+1!
+1.
+#480000
+0!
+0.
+#485000
+1!
+1.
+#490000
+0!
+0.
+#495000
+1!
+1.
+#500000
+0!
+0.
+#505000
+1!
+1.
+#510000
+0!
+0.
+#515000
+1!
+1.
+#520000
+0!
+0.
+#525000
+1!
+1.
+#530000
+0!
+0.
+#535000
+1!
+1.
+#540000
+0!
+0.
+#545000
+1!
+1.
+#550000
+0!
+0.
+#555000
+1!
+1.
+#560000
+0!
+0.
+#565000
+1!
+1.
+#570000
+0!
+0.
+#575000
+1!
+1.
+#580000
+0!
+0.
+#585000
+1!
+1.
+#590000
+0!
+0.
+#595000
+1!
+1.
+#600000
+0!
+0.
+#605000
+1!
+1.
+#610000
+0!
+0.
+#615000
+1!
+1.
+#620000
+0!
+0.
+#625000
+1!
+1.
+#630000
+0!
+0.
+#635000
+1!
+1.
+#640000
+0!
+0.
+#645000
+1!
+1.
+#650000
+0!
+0.
+#655000
+1!
+1.
+#660000
+0!
+0.
+#665000
+1!
+1.
+#670000
+0!
+0.
+#675000
+1!
+1.
+#680000
+0!
+0.
+#685000
+1!
+1.
+#690000
+0!
+0.
+#695000
+1!
+1.
+#700000
+0!
+0.
+#705000
+1!
+1.
+#710000
+0!
+0.
+#715000
+1!
+1.
