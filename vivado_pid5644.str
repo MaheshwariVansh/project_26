@@ -1,0 +1,90 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 5644
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Aug 28 21:49:54 IST 2025
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Vansh Maheshwari
+User home directory: C:/Users/Vansh Maheshwari
+User working directory: C:/Vivado/project_26
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: C:/Vivado
+HDI_APPROOT: C:/Vivado/2020.2
+RDI_DATADIR: C:/Vivado/2020.2/data
+RDI_BINDIR: C:/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Vansh Maheshwari/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Vansh Maheshwari/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Vansh Maheshwari/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Vivado/project_26/vivado.log
+Vivado journal file location: 	C:/Vivado/project_26/vivado.jou
+Engine tmp dir: 	C:/Vivado/project_26/.Xil/Vivado-5644-DESKTOP-I2T2J0T
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Vivado/2020.2
+XILINX_SDK: C:/Vitis/2020.2
+XILINX_VITIS: C:/Vitis/2020.2
+XILINX_VIVADO: C:/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,068 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  2002 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 82 MB (+82983kb) [00:00:24]
+// [Engine Memory]: 1,068 MB (+968153kb) [00:00:24]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Vivado\project_26\project_26.xpr. Version: Vivado v2020.2 
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Vivado/project_26/project_26.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,068 MB. GUI used memory: 55 MB. Current time: 8/28/25, 9:49:57 PM IST
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: PROJECT_CLOSE
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Elapsed time: 13 seconds
+dismissDialog("Open Project"); // bz
